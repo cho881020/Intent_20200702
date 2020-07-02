@@ -11,6 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        두번째 액티비티로 데이터 전달하기
+        sendToSecondBtn.setOnClickListener {
+
+        }
+
         moveToFirstBtn.setOnClickListener {
 
 //            Intent로 다른 액티비티로 이동. => 비행기로 여행.
