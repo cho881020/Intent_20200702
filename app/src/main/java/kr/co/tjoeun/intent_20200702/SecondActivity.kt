@@ -17,6 +17,15 @@ class SecondActivity : AppCompatActivity() {
 //        저장한 데이터를 텍스트뷰에 반영
         receivedMessageTxt.text = receivedMessage
 
+//        첨부된 Int 데이터를 변수에 저장.
+//        만약 첨부가 안되었다면 -1을 대신 집어넣자.
+//        JAVA의 기본형 변수를 받을때만 필요한 작업.
+        val recNum = intent.getIntExtra("number", -1)
+
+//        받은데이터 : 1234 등 숫자.
+//        세팅할 내용 => "고유번호 : 1234" 등 가공된 String
+        numberTxt.text = "고유번호 : ${recNum}"
+
 
     }
 }

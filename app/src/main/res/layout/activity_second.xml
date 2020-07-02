@@ -11,6 +11,14 @@
     tools:context=".SecondActivity">
 
     <TextView
+        android:id="@+id/numberTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="번호 : 1111"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <TextView
         android:id="@+id/receivedMessageTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
