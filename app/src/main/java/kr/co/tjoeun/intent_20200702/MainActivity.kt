@@ -11,6 +11,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        세번째 액티비티로 닉네임 변경하러 가기
+        changeNickNameBtn.setOnClickListener {
+
+//            다른화면으로 이동 : Intent
+            val myIntent = Intent(this, EditNickNameActivity::class.java)
+
+//            이동 출발 : startActivityForResult => 결과를 가지러 이동.
+//            어떤 결과를 얻으러 가는지? 고유 번호로 구별.
+            startActivityForResult(myIntent, 1000)
+
+
+        }
+
 //        두번째 액티비티로 데이터 전달하기
         sendToSecondBtn.setOnClickListener {
 
